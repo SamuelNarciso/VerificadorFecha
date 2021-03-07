@@ -9,15 +9,59 @@
 	</head>
 	<body class="w3-light-grey">
 		<header class="w3-container w3-indigo">
-			<h1>Documentacion</h1>
+			<h1><b>Documentacion</b></h1>
 		</header>
 		<div class="w3-container w3-light-grey">
 			<h2 class="w3-text-dark-grey"><b> Verificador de fechas </b></h2>
 			<p>Esta pagina se considerara la documentacion de este mismo proyecto.</p>
+            <a class="w3-text-purple" href="../index.html">Probar el programa</a>
+			<div class="w3-card-3 w3-margin-top w3-margin-bottom">
+				<header class="w3-container w3-indigo">
+					<h2>Tutorial practico</h2>
+				</header>
+				<h3>Insertar fecha</h3>
+				<p>
+					Para ingresar la fecha utilizaremos el siguiente campo, en el cual
+					ingresaremos la fecha siguiendo el formato que nos marca
+				</p>
+				<div class="w3-card-4 w3-margin-left" style="width: 80%">
+					<img
+						src="./assets/img/inputFecha.png"
+						alt="Arbol"
+						style="width: 100%"
+					/>
+				</div>
+				<p>
+					Para comprobar nuestra fecha y ejecutar el programa necesitamos
+					presionar el boton azul que se encuentra al costado derecho de la caja
+					de texto.
+				</p>
+
+				<h3> <br /> Que nos muestra el sistema? </h3>
+                <p>En la parte inferior veras un recuadro que dice log, en ese campo se estaran listando los acontecimientos que sucedan mientras se revisa tu fecha.</p>
+                <div class="w3-card-4 w3-margin-left" style="width: 80%">
+					<img
+						src="./assets/img/output.png"
+						alt="Arbol"
+						style="width: 100%"
+					/>
+				</div>
+
+                <h3> <br /> Ejemplo en ejecucion </h3>
+                <p>Suponiendo que ingresamos una fecha con errores y verificamos se veria algo como lo siguiente</p>
+                <div class="w3-card-4 w3-margin-left" style="width: 80%">
+					<img
+						src="./assets/img/ejecucion.png"
+						alt="Arbol"
+						style="width: 100%"
+					/>
+				</div>
+                <a class="w3-text-purple" href="../index.html">Probar el programa</a>
+			</div>
 
 			<div class="w3-card-3 w3-margin-bottom">
 				<header class="w3-container w3-indigo">
-					<h1>Algoritmo general del sistema</h1>
+					<h2>Algoritmo general del sistema</h2>
 				</header>
 
 				<div class="w3-container w3-light-grey">
@@ -77,7 +121,7 @@
 			<div class="w3-card-3 w3-margin-bottom">
 				<div class="w3-container-w3-light-grey">
 					<header class="w3-container w3-indigo">
-						<h1>Algoritmos del arbol</h1>
+						<h2>Algoritmos del arbol</h2>
 					</header>
 					<div class="w3-container">
 						<ul class="w3-ul w3-small">
@@ -121,35 +165,67 @@
 							</li>
 							<li>
 								Ejecutamos el metodo para buscar en nuestro nodo, mandandole el
-								valor y el tipo de nodo, junto con el arreglo <i>(El cual contiene los valores y tokens.)</i>
+								valor y el tipo de nodo, junto con el arreglo
+								<i>(El cual contiene los valores y tokens.)</i>
 							</li>
 							<li>recorremos el nodo recursivamente buscando por la derecha</li>
-                            <li><h1 class="w3-indigo">Busqueda arbol</h1></li>
-                            <li> Verificamos si el primer elemento de nuestro arreglo que contiene la fecha se encuentra en el valor que nos paso nuestro nodo <i>(Su lenguaje)</i> </li>
-							<li>Si este se encuentra mandamos un mensaje por pantalla de que fue encontrado y todo esta correcto con ese dato</li>
+							<li><h1 class="w3-indigo">Busqueda arbol</h1></li>
+							<li>
+								Verificamos si el primer elemento de nuestro arreglo que
+								contiene la fecha se encuentra en el valor que nos paso nuestro
+								nodo <i>(Su lenguaje)</i>
+							</li>
+							<li>
+								Si este se encuentra mandamos un mensaje por pantalla de que fue
+								encontrado y todo esta correcto con ese dato
+							</li>
 							<li>posteriormente este se remueve de la lista</li>
-							<li>Si no se encuentra se mandara un mensaje de error, mencionando en donde se fallo </li>
-							<li><i>Como la busqueda en el arbol es recursivo, estara llamando a este metodo a lo largo de todos sus nodos, permitiendo verificar cada dato ingresado</i></li>
+							<li>
+								Si no se encuentra se mandara un mensaje de error, mencionando
+								en donde se fallo
+							</li>
+							<li>
+								<i
+									>Como la busqueda en el arbol es recursivo, estara llamando a
+									este metodo a lo largo de todos sus nodos, permitiendo
+									verificar cada dato ingresado</i
+								>
+							</li>
 							<li></li>
 						</ul>
 					</div>
 				</div>
 			</div>
 
-            <div class="w3-card-4 w3-margin-left" style="width:50%">
-                <img src="../arbol.svg" alt="Arbol" style="width:100%">
-                <div class="w3-container w3-center w3-indigo">
-                  <p>Arbol / inorden</p>
-                </div>
-              </div>
+			<div class="w3-card-4 w3-margin-left" style="width: 50%">
+				<img
+					src="../documentacion/assets/svg/arbol.svg"
+					alt="Arbol"
+					style="width: 100%"
+				/>
+				<div class="w3-container w3-center w3-indigo">
+					<p>Arbol / inorden</p>
+				</div>
+			</div>
 
+			<div class="w3-card-3 w3-margin-top w3-margin-bottom">
+				<header class="w3-container w3-indigo">
+					<h2>Lenguajes</h2>
+				</header>
+				<ul class="w3-ul w3-small">
+					<li>
+						Dias =
+						[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,]
+					</li>
+					<li>Meses = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]</li>
+					<li>
+						Anios =
+						[2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,]
+					</li>
+					<li>Token = '/'</li>
+					<li></li>
+				</ul>
+			</div>
 		</div>
 	</body>
 </html>
-
-<!-- expresiones -->
-<!-- lenguaje  -->
-<!-- tipos de variables que declaramos -->
-<!-- arbol de las expresiones -->
-<!-- sintaxis u orden -->
-<!-- programa -->

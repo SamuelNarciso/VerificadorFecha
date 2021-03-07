@@ -104,10 +104,14 @@
   font-size: 1.2em;
   height: 3em;
   width: 20%;
-  background: #00adb5;
   border: none;
   color: #eeeeee;
   cursor: pointer;
+  background: linear-gradient(45deg, #00adb5, #05888f);
+}
+
+#formularioFecha #enviarBoton:hover {
+  background: #00adb5;
 }
 
 #log {

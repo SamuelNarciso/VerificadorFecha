@@ -78,10 +78,13 @@ $white: #eeeeee;
 		font-size: 1.2em;
 		height: 3em;
 		width: 20%;
-		background: $cyan;
 		border: none;
 		color: $white;
 		cursor: pointer;
+		background: linear-gradient(45deg, $cyan , #05888f);
+		&:hover{
+			background: $cyan;
+		}
 	}
 }
 
