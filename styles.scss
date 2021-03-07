@@ -1,0 +1,130 @@
+$darkPrincipal: #222831;
+$gris: #393e46;
+
+$pruplePrincipal: #8739f9;
+$prupleSecundario: #c651cd;
+
+$rojo: #c03e3e;
+
+$cyan: #00adb5;
+$white: #eeeeee;
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.contenedorPadre {
+	background: $darkPrincipal;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: center;
+	flex-direction: column;
+
+	header {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		color: $white;
+		width: 80%;
+		h1 {
+			color: $prupleSecundario;
+			font-family: 'Courier New', Courier, monospace;
+		}
+		ul {
+			display: flex;
+			li {
+				list-style-type: none;
+				margin: 0 1em;
+				a {
+					font-family: monospace;
+					font-size: 1.3em;
+					text-decoration: none;
+					color: $white;
+					&:hover {
+						cursor: pointer;
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+}
+
+#formularioFecha {
+	width: 80%;
+	height: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	#cajaTexto {
+		margin-right: 1em;
+		width: 50%;
+		height: 3em;
+		padding: 1em;
+		font-size: 1.2em;
+		background: transparent;
+		color: $white;
+		border: 1px solid $gris;
+		border-radius: 6px;
+	}
+	#enviarBoton {
+		border-radius: 6px;
+		font-size: 1.2em;
+		height: 3em;
+		width: 20%;
+		background: $cyan;
+		border: none;
+		color: $white;
+		cursor: pointer;
+	}
+}
+
+#log {
+	width: 80%;
+	height: 30%;
+	border-radius: 6px;
+	border: 4px solid $gris;
+
+	legend {
+		margin-left: 1em;
+		font-size: 24px;
+		font-family: monospace;
+		color: $white;
+	}
+	display: flex;
+	flex-direction: column;
+	padding: 1em;
+	overflow-y: auto;
+	.textLog {
+		font-family: 'Courier New', Courier, monospace;
+		font-size: 18px;
+		color: $white;
+      
+        
+	}
+	.error {
+		font-weight: 500;
+		color: #f2f2f2;
+		background: linear-gradient(90deg, $rojo, #c03e3e);
+		border-radius: 3px;
+	}
+}
+
+footer {
+    font-family: monospace;
+    font-size: 1.2em;
+	width: 80%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: row;
+	.author {
+		color: $white;
+	}
+}

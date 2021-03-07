@@ -1,0 +1,171 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contenedorPadre {
+  background: #222831;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contenedorPadre header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #eeeeee;
+  width: 80%;
+}
+
+.contenedorPadre header h1 {
+  color: #c651cd;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.contenedorPadre header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contenedorPadre header ul li {
+  list-style-type: none;
+  margin: 0 1em;
+}
+
+.contenedorPadre header ul li a {
+  font-family: monospace;
+  font-size: 1.3em;
+  text-decoration: none;
+  color: #eeeeee;
+}
+
+.contenedorPadre header ul li a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#formularioFecha {
+  width: 80%;
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#formularioFecha #cajaTexto {
+  margin-right: 1em;
+  width: 50%;
+  height: 3em;
+  padding: 1em;
+  font-size: 1.2em;
+  background: transparent;
+  color: #eeeeee;
+  border: 1px solid #393e46;
+  border-radius: 6px;
+}
+
+#formularioFecha #enviarBoton {
+  border-radius: 6px;
+  font-size: 1.2em;
+  height: 3em;
+  width: 20%;
+  background: #00adb5;
+  border: none;
+  color: #eeeeee;
+  cursor: pointer;
+}
+
+#log {
+  width: 80%;
+  height: 30%;
+  border-radius: 6px;
+  border: 4px solid #393e46;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1em;
+  overflow-y: auto;
+}
+
+#log legend {
+  margin-left: 1em;
+  font-size: 24px;
+  font-family: monospace;
+  color: #eeeeee;
+}
+
+#log .textLog {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+  color: #eeeeee;
+}
+
+#log .error {
+  font-weight: 500;
+  color: #f2f2f2;
+  background: -webkit-gradient(linear, left top, right top, from(#c03e3e), to(#c03e3e));
+  background: linear-gradient(90deg, #c03e3e, #c03e3e);
+  border-radius: 3px;
+}
+
+footer {
+  font-family: monospace;
+  font-size: 1.2em;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+footer .author {
+  color: #eeeeee;
+}
+/*# sourceMappingURL=styles.css.map */

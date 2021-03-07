@@ -1,12 +1,15 @@
+const logBox = document.querySelector('#log');
+
 const Dias = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31];
 const Meses = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
-const Anios = [2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2016,2017,2018,2019,2020];
+const Anios = [2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020];
 const Token = '/'
-// raiz = new Nodo()
+
+
+
 class Nodo {
     raiz = null;
-      
-    constructor(key) {
+        constructor(key) {
         this.llave = key;
         this.padre = null;
         this.izquierdo = null;
@@ -20,7 +23,6 @@ class Nodo {
        let n = new Nodo( key)
         n.valor=valor;
         n.tipo=tipo;
-    
         if(this.raiz === null){
             this.raiz = n;
         }else{
@@ -31,7 +33,7 @@ class Nodo {
                     nodoTemporal = nodoTemporal.derecho
                 }else{
                     nodoTemporal = nodoTemporal.izquierdo
-                    
+    
                 }
             }
             if(n.llave < n.padre.llave){
@@ -56,13 +58,24 @@ stringToNumero = (cadena) => {
 
 
 const buscarValor = ( lista ,tipo, arregloFecha )=>{
-    //  console.log(lista)
      const valor =  stringToNumero(arregloFecha[0])
-    //  console.log(valor)
     if( lista.includes( valor) ){
-         console.log('Es correcto el '+tipo)
+
+        const labelCorrecto = document.createElement('label');
+        labelCorrecto.innerText = `Es correcto el ${tipo}`;
+        labelCorrecto.classList.add('textLog')
+        logBox.append(labelCorrecto)
+
+        //  console.log('Es correcto el '+tipo)
+
     }else{
-         console.error('Es incorrecto el '+ tipo)
+        const labelIncorrecto = document.createElement('label');
+        labelIncorrecto.innerText = `Es Incorrecto el ${tipo}`;
+        labelIncorrecto.classList.add('textLog');
+        labelIncorrecto.classList.add('error');
+        logBox.append(labelIncorrecto);
+      
+        //  console.warn('Es incorrecto el '+ tipo)
      }
      arregloFecha.shift()
 }
