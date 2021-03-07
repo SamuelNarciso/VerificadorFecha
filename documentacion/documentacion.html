@@ -1,20 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <title>Documentacion</title>
-</head>
-<body class="w3-light-grey">
-    <header class="w3-container w3-indigo">
-        <h1>Documentacion </h1>
-      </header>
-    <div class="w3-container w3-light-grey" >
-        <h2 class="w3-text-dark-grey"> <b>  Verificador de fechas </b> </h2 >
-            <p>Esta pagina se considerara la documentacion de este mismo proyecto.</p>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+		<title>Documentacion</title>
+	</head>
+	<body class="w3-light-grey">
+		<header class="w3-container w3-indigo">
+			<h1>Documentacion</h1>
+		</header>
+		<div class="w3-container w3-light-grey">
+			<h2 class="w3-text-dark-grey"><b> Verificador de fechas </b></h2>
+			<p>Esta pagina se considerara la documentacion de este mismo proyecto.</p>
 
-    </div>
-</body>
+			<div class="w3-card-3 w3-margin-bottom">
+				<header class="w3-container w3-indigo">
+					<h1>Algoritmo general del sistema</h1>
+				</header>
+
+				<div class="w3-container w3-light-grey">
+					<ul class="w3-ul w3-small">
+						<li>Obtenemos la cadena del usuario</li>
+						<li>
+							Separamos segun el token
+							<span class="w3-text-red"> <b> / </b> </span> el cual nos
+							entregara un arreglo con el siguiente formato
+							<span class="w3-text-blue"> [ valor ] [ valor ] [ valor ] </span>
+						</li>
+						<li>
+							Verificamos si el arreglo contiene 3 elementos, sino mandamos un
+							error en el formato de la fecha
+						</li>
+						<li>
+							Tomamos cada elemento de nuestro arreglo obtenido previamente y lo
+							pasamos a numero
+							<i> (Esto eliminara los 0 que se encuentran a la izquierda)</i>
+						</li>
+						<li>
+							Medimos la longitud de la primer posicion del arreglo obtenido
+							previmante <i> (Nos dara la longitud de los dias) </i> <br />
+						</li>
+						<li>
+							hacemos lo mismo para el seguidno elemento
+							<i>( Devolver la longitud de los meses)</i>
+						</li>
+						<li>
+							teniendo la longitud de los dias + 1 espacio podemos saber si el
+							elemento a su derecha es el token /, sino es mandamos un error,
+						</li>
+						<li>
+							repetimos lo mismo con los meses, sumando la longitud de los dias
+							y los meses de esta manera comprobaremos que tenemos ambos tokens
+						</li>
+
+						<li>
+							Armamos un nuevo arreglo, en donde pondremos cada elemento del
+							arreglo anterior, pero en medio de cada numero recolocamos los
+							tokens / <br />
+							el arreglo quedara de la siguiente manera
+							<span class="w3-text-blue"
+								>[NUMERO] ['/'] [NUMERO] ['/'] [NUMERO]
+							</span>
+						</li>
+						<li>Enviamos nuestro arreglo al arbol que construimos.</li>
+						<li>
+							Mostramos mensajes por pantalla, en donde se muestren errores o
+							comentarios sobre si es correcto el valor dado
+						</li>
+						<li></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="w3-card-3 w3-margin-bottom">
+				<div class="w3-container-w3-light-grey">
+					<header class="w3-container w3-indigo">
+						<h1>Algoritmos del arbol</h1>
+					</header>
+					<div class="w3-container">
+						<ul class="w3-ul w3-small">
+							<li>Definimos los lenguajes<i> (Arreglos)</i> dia, mes, año.</li>
+							<li>
+								Creamos una clase nodo la cual contendra llave, padre, izuierdo,
+								derecho, valor, tipo
+							</li>
+							<li>Creamos un elemento nodo llamado raiz iniciado en nulo</li>
+							<li>todos los campos comenzaran en nullo, excepto la llave</li>
+							<li>
+								Creamos un metodo llamado insertar, el cual recibe 3 argumentos,
+								la llave, el valor y el tipo
+							</li>
+							<li>
+								Comprobamos si hay una raiz, si no hay raiz colocamos ese primer
+								nodo como raiz
+							</li>
+							<li>
+								Si no hay nodo raiz comprobamos la llave que tiene
+								<i>la llave es un valor de ponderacion</i>
+							</li>
+							<li>
+								Si nuestra llave es mayor a la de la llave padre colocamos el
+								nodo a la derecha de su nodo padre
+							</li>
+							<li>
+								Si nuestra llave es menor a la de la llave padre colocamos el
+								nodo a la izquierda de su nodo padre
+							</li>
+							<li>
+								En la posicion que se coloquen se colocaran todos sus datos, su
+								llave, su valor y su tipo <i>(dia, mes, año o token)</i>
+							</li>
+							<li><h1 class="w3-indigo">Recorrido del arbol</h1></li>
+							<li>El recorrido que hago es INORDER</li>
+							<li>Verifico que el nodo en el que me encuentre no sea nulo</li>
+							<li>
+								Si no es nulo recorremos recursivamente, comenzando por la
+								izquierda
+							</li>
+							<li>
+								Ejecutamos el metodo para buscar en nuestro nodo, mandandole el
+								valor y el tipo de nodo, junto con el arreglo <i>(El cual contiene los valores y tokens.)</i>
+							</li>
+							<li>recorremos el nodo recursivamente buscando por la derecha</li>
+                            <li><h1 class="w3-indigo">Busqueda arbol</h1></li>
+                            <li> Verificamos si el primer elemento de nuestro arreglo que contiene la fecha se encuentra en el valor que nos paso nuestro nodo <i>(Su lenguaje)</i> </li>
+							<li>Si este se encuentra mandamos un mensaje por pantalla de que fue encontrado y todo esta correcto con ese dato</li>
+							<li>posteriormente este se remueve de la lista</li>
+							<li>Si no se encuentra se mandara un mensaje de error, mencionando en donde se fallo </li>
+							<li><i>Como la busqueda en el arbol es recursivo, estara llamando a este metodo a lo largo de todos sus nodos, permitiendo verificar cada dato ingresado</i></li>
+							<li></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+            <div class="w3-card-4 w3-margin-left" style="width:50%">
+                <img src="../arbol.svg" alt="Arbol" style="width:100%">
+                <div class="w3-container w3-center w3-indigo">
+                  <p>Arbol / inorden</p>
+                </div>
+              </div>
+
+		</div>
+	</body>
 </html>
+
+<!-- expresiones -->
+<!-- lenguaje  -->
+<!-- tipos de variables que declaramos -->
+<!-- arbol de las expresiones -->
+<!-- sintaxis u orden -->
+<!-- programa -->

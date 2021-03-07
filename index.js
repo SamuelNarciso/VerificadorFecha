@@ -1,22 +1,13 @@
-const formularioFecha  = document.querySelector('#formularioFecha');
+const formularioFecha = document.querySelector('#formularioFecha');
 
 // let fechaInput = ' //';
 
-formularioFecha.addEventListener('submit', (e)=>{
+formularioFecha.addEventListener('submit', (e) => {
 	logBox.innerHTML = '<legend>Log</legend>';
 	e.preventDefault();
-	const fecha =  e.target[0].value;
-	init( fecha );
-
-
-})
-
-
-
-
-	
-	
-
+	const fecha = e.target[0].value;
+	init(fecha);
+});
 
 function init(fecha) {
 	const fechaSinEspacios = fecha.replaceAll(' ', '');
@@ -45,16 +36,9 @@ function init(fecha) {
 	}
 
 	if (errorFechaSinFormato) {
+		let errorFormato = ` ${errorFechaSinFormato} tu fecha es: ${fechaSinEspacios}  corrigela`;
 
-		// console.log(
-		// 	errorFechaSinFormato + ' tu fecha es: ' + fechaSinEspacios + ' corrigela'
-		// );
-		let errorFormatoFecha = document.createElement('label');
-        errorFormatoFecha.innerText = ` ${errorFechaSinFormato} tu fecha es: ${fechaSinEspacios}  corrigela`  ;
-        errorFormatoFecha.classList.add('textLog')
-        errorFormatoFecha.classList.add('error')
-        logBox.append(errorFormatoFecha)
-
+		colocarEnHTML(logBox, errorFormato, ['textLog', 'error']);
 	} else {
 		const arregloTokenizado = crearArregloConTokens(
 			fechaSeparadaSinTokens,
@@ -69,9 +53,13 @@ function init(fecha) {
 		arbol.insertar(4, Token, 'Token');
 
 		// console.log('%cTu fecha "' + fechaSinEspacios + '"', 'color:cyan');
+		colocarEnHTML(logBox, `Tu fecha ${fechaSinEspacios}`, ['textLog']);
 		recorridoInOrder(arbol.raiz, arregloTokenizado);
-
-	
-		
 	}
 }
+
+ 
+
+
+
+

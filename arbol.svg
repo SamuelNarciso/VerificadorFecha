@@ -1,0 +1,23 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg width="800" height="600" version="1.1" xmlns="http://www.w3.org/2000/svg">
+	<ellipse stroke="black" stroke-width="1" fill="none" cx="376.5" cy="92.5" rx="30" ry="30"/>
+	<text x="356.5" y="98.5" font-family="Times New Roman" font-size="20">Anio</text>
+	<ellipse stroke="black" stroke-width="1" fill="none" cx="314.5" cy="195.5" rx="30" ry="30"/>
+	<text x="289.5" y="201.5" font-family="Times New Roman" font-size="20">Token</text>
+	<ellipse stroke="black" stroke-width="1" fill="none" cx="245.5" cy="279.5" rx="30" ry="30"/>
+	<text x="227.5" y="285.5" font-family="Times New Roman" font-size="20">Dias</text>
+	<ellipse stroke="black" stroke-width="1" fill="none" cx="451.5" cy="195.5" rx="30" ry="30"/>
+	<text x="425.5" y="201.5" font-family="Times New Roman" font-size="20">Meses</text>
+	<ellipse stroke="black" stroke-width="1" fill="none" cx="511.5" cy="279.5" rx="30" ry="30"/>
+	<text x="486.5" y="285.5" font-family="Times New Roman" font-size="20">Token</text>
+	<polygon stroke="black" stroke-width="1" points="361.028,118.203 329.972,169.797"/>
+	<polygon fill="black" stroke-width="1" points="329.972,169.797 338.381,165.522 329.814,160.365"/>
+	<polygon stroke="black" stroke-width="1" points="295.458,218.682 264.542,256.318"/>
+	<polygon fill="black" stroke-width="1" points="264.542,256.318 273.484,253.31 265.756,246.963"/>
+	<polygon stroke="black" stroke-width="1" points="394.159,116.752 433.841,171.248"/>
+	<polygon fill="black" stroke-width="1" points="433.841,171.248 433.174,161.838 425.09,167.724"/>
+	<polygon stroke="black" stroke-width="1" points="468.937,219.912 494.063,255.088"/>
+	<polygon fill="black" stroke-width="1" points="494.063,255.088 493.482,245.672 485.344,251.484"/>
+</svg>
